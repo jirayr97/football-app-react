@@ -3,7 +3,7 @@ const TreeData = [
         {
             matchId: 1,
             firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            secondCountry: "Arabia",
         },
         {
             matchId: 2,
@@ -65,8 +65,8 @@ const TreeData = [
         },
         {
             matchId: 12,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 8,
         },
         
@@ -74,15 +74,15 @@ const TreeData = [
     [
         {
             matchId: 13,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 10,
 
         },
         {
             matchId: 14,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 12,
         },
 
@@ -91,8 +91,8 @@ const TreeData = [
     [
         {
             matchId: 15,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 14,
 
         },
@@ -100,8 +100,8 @@ const TreeData = [
     [
         {
             matchId: 32,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 16,
 
         },
@@ -109,8 +109,8 @@ const TreeData = [
     [
         {
             matchId: 31,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 30,
 
         },
@@ -118,14 +118,14 @@ const TreeData = [
     [
         {
             matchId: 29,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 26,
         },
         {
             matchId: 30,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 28,
 
         },
@@ -134,29 +134,29 @@ const TreeData = [
     [
         {
             matchId: 25,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 18,
 
         },
         {
             matchId: 26,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 20,
 
         },
         {
             matchId: 27,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 22,
 
         },
         {
             matchId: 28,
-            firstCountry: "",
-            secondCountry: "",
+            firstCountry: null,
+            secondCountry: null,
             nextMatchId: 24,
 
         },
@@ -165,7 +165,7 @@ const TreeData = [
     [
         {
             matchId: 17,
-            firstCountry: "Costa Rica",
+            firstCountry: "Costa-Rica",
             secondCountry: "Serbia",
         },
         {

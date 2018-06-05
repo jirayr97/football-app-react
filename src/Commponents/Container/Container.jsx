@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import treeData from "../../TreeData";
 import Tree from "./Tree";
 import Betting from "./Betting";
@@ -14,13 +14,16 @@ class Container extends React.Component {
         }
     }
     selectMatch = (matchObject) => {
-        this.setState({ currentGame: matchObject })
+        if (matchObject.firstCountry && matchObject.secondCountry) {
+            this.setState({ currentGame: matchObject })
+
+        }
     }
     setWinner = (winObj) => {
         const { treeData } = this.state;
         let newTree;
-        treeData.map(dataArray => {
-            dataArray.map(matchObj => {
+        treeData.forEach(dataArray => {
+            dataArray.forEach(matchObj => {
                 if (matchObj.nextMatchId === winObj.matchId  || (matchObj.nextMatchId ===16 && winObj.matchId === 31)) {
                     matchObj.secondCountry = winObj.winner; 
                 } else if((matchObj.nextMatchId -1) === winObj.matchId ) {
@@ -28,7 +31,6 @@ class Container extends React.Component {
                 } else {
                     newTree = treeData;
                 }
-               
             })
         })
         if (winObj.matchId === 32) {
@@ -41,10 +43,10 @@ class Container extends React.Component {
     render() {
         const { currentGame } = this.state;
         return(
-            <Fragment>
+            <div>
                 <Betting currentGame={currentGame} setWinner={this.setWinner}/>
                 <Tree selectMatch={this.selectMatch} treeData={this.state.treeData}/>
-            </ Fragment>
+            </ div>
         )
     }
 }
