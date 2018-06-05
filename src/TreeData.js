@@ -7,159 +7,201 @@ const TreeData = [
         },
         {
             matchId: 2,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "Egypt",
+            secondCountry: "Uruguay",
         },
         {
             matchId: 3,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "Morocco",
+            secondCountry: "Iran",
         },
         {
             matchId: 4,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "Portugal",
+            secondCountry: "Spain",
         },
         {
             matchId: 5,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "France",
+            secondCountry: "Australia",
         },
         {
             matchId: 6,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "Argentina",
+            secondCountry: "Iceland",
         },
         {
             matchId: 7,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "Peru",
+            secondCountry: "Denmark",
         },
         {
             matchId: 8,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            firstCountry: "Croatia",
+            secondCountry: "Nigeria",
         },
     ],
     [
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 9,
+            firstCountry: null,
+            secondCountry: null,
+            nextMatchId:2,
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 10,
+            firstCountry: null,
+            secondCountry: null,
+            nextMatchId: 4,
+
+
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 11,
+            firstCountry: null,
+            secondCountry: null,
+            nextMatchId: 6,
+
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 12,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 8,
         },
         
     ],
     [
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 13,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 10,
+
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 14,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 12,
+        },
+
+    ],
+
+    [
+        {
+            matchId: 15,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 14,
+
+        },
+    ],
+    [
+        {
+            matchId: 32,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 16,
+
+        },
+    ],
+    [
+        {
+            matchId: 31,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 30,
+
+        },
+    ],
+    [
+        {
+            matchId: 29,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 26,
+        },
+        {
+            matchId: 30,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 28,
+
         },
 
     ],
     [
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
-        },
-    ],
-    [
-        {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
-        },
-        {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
-        },
+            matchId: 25,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 18,
 
-    ],
-    [
-        {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 26,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 20,
+
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 27,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 22,
+
         },
         {
-            matchId: 1,
-            firstCountry: "x",
-            secondCountry: "y",
+            matchId: 28,
+            firstCountry: "",
+            secondCountry: "",
+            nextMatchId: 24,
+
         },
         
     ],
     [
         {
-            matchId: 1,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 17,
+            firstCountry: "Costa Rica",
+            secondCountry: "Serbia",
         },
         {
-            matchId: 2,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 18,
+            firstCountry: "Germany",
+            secondCountry: "Mexico",
         },
         {
-            matchId: 3,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 19,
+            firstCountry: "Brazil",
+            secondCountry: "Switzerland",
         },
         {
-            matchId: 4,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 20,
+            firstCountry: "Sweden",
+            secondCountry: "Korea",
         },
         {
-            matchId: 5,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 21,
+            firstCountry: "Poland",
+            secondCountry: "Senegal",
         },
         {
-            matchId: 6,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 22,
+            firstCountry: "Colombia",
+            secondCountry: "Japan",
         },
         {
-            matchId: 7,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 23,
+            firstCountry: "Panama",
+            secondCountry: "Belgium",
         },
         {
-            matchId: 8,
-            firstCountry: "Russia",
-            secondCountry: "Saudi Arabia",
+            matchId: 24,
+            firstCountry: "Tunisia",
+            secondCountry: "England",
         },
     ],
 ];

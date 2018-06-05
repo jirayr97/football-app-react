@@ -1,0 +1,36 @@
+.bet-container {
+    width: 50%;
+    border: 1px solid green;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(211, 255, 205);
+}
+.match-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.match-item  {
+    /* display: inline-block; */
+    /* margin: 20px 20px; */
+    border: 1px solid green;
+    width: 18%;
+    height: 40px;
+    background-color: lawngreen;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+    /* padding: 10px 0; */
+}
+.winner {
+    border: 1px solid green;
+    width: 18%;
+    height: 40px;
+    background-color: lawngreen;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+
+}

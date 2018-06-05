@@ -3,26 +3,23 @@ import "./Tree.css";
 
 
 class Tree extends React.Component {
-
     render() {
-        const { treeData } = this.props;
+        let { treeData } = this.props;
         
-            const tree = treeData.map(columnData => {
-                return (
-                <div className="games-column">
-                    {
-                        columnData.map(matchObject => {
-                            return (
-                            <div className="games">
-                                    <div className="country">{matchObject.firstCountry}</div>
-                                    <div className="country">{matchObject.secondCountry}</div>
-                            </div>)
-                        })
-                    }
-                </div>)
-            })
-        
-        
+        let tree = treeData.map(columnData => {
+            return (
+            <div className="games-column">
+                {
+                    columnData.map(matchObject => {
+                        return (
+                        <div className="games" onClick={() => this.props.selectMatch(matchObject)}>
+                                <div className="country">{matchObject.firstCountry}</div>
+                                <div className="country">{matchObject.secondCountry}</div>
+                        </div>)
+                    })
+                }
+            </div>)
+        })
         return(
             <div className="container">
                 {tree}
