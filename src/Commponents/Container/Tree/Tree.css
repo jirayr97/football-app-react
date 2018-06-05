@@ -4,7 +4,7 @@
     justify-content: center;
     background: url("../../../fifa.png") ;
     background-position: center;
-    background-position-y: -350px;
+    /* background-position-y: -350px; */
     background-size: cover;
     background-repeat: no-repeat;   
     background-color: aliceblue;
@@ -30,25 +30,26 @@
 .country {
     cursor: pointer;
     /* text-align: center; */
-    padding-left: 50px;
+    padding-left: 45px;
     padding-top: 2px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    color: rgb(94, 11, 0);
+    width: 90%;
+    color: rgb(155, 21, 0);
     height: 30px;
-    font-size: 1rem;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(183, 247, 183);
+    font-size: 12px;
+    border: 2px solid rgb(248, 117, 9);
+    background-color: rgb(173, 255, 247);
     background-repeat: no-repeat;
-    background-size: 34%;
-    margin-top: 2px;
+    background-size: contain;
+    margin-top: 4px;
 }
 
 .country:hover {
-    background-color: lime;
-    border: 1px solid snow;
+    background-color: #0ACF00;
+    border: 2px solid #ADFFF7;
+    color: rgb(0, 0, 0);
 }
 .Russia {
     background-image: url("https://www.theflagshop.co.uk/media/wysiwyg/porto/homepage/russia.png");

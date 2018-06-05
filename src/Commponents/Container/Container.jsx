@@ -15,6 +15,10 @@ class Container extends React.Component {
     }
     selectMatch = (matchObject) => {
         if (matchObject.firstCountry && matchObject.secondCountry) {
+            let firstRandom = Math.random();
+            let secondRandom = Math.random();
+            matchObject.firstCountryRate = firstRandom < 0.1 ?  Math.round(firstRandom * 100) : Math.round(firstRandom * 10);
+            matchObject.secondCountryRate = secondRandom < 0.1 ?  Math.round(secondRandom * 100) : Math.round(secondRandom * 10)
             this.setState({ currentGame: matchObject })
 
         }
@@ -43,7 +47,7 @@ class Container extends React.Component {
     render() {
         const { currentGame } = this.state;
         return(
-            <div>
+            <div>   
                 <Betting currentGame={currentGame} setWinner={this.setWinner}/>
                 <Tree selectMatch={this.selectMatch} treeData={this.state.treeData}/>
             </ div>

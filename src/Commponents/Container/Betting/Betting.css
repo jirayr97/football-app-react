@@ -1,48 +1,57 @@
 .bet-container {
-    width: 50%;
-    border: 1px solid green;
-    height: 200px;
-    margin: 20px auto;
-    background-color: rgb(211, 255, 205);
+    /* margin: 20px auto; */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.match-container {
+.match {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    border: 1px solid green;
+    height: 200px;
+    background-color: rgb(211, 255, 205);
 }
 
 .match-item  {
-    /* display: inline-block; */
     /* margin: 20px 20px; */
+    display: flex;
+    flex-direction: row;
     border: 1px solid green;
-    width: 25%;
+    width: 45%;
     height: 40px;
     background-color: lawngreen;
     color: brown;
     font-weight: bold;
     /* text-align: center; */
     cursor: pointer;
-    padding-top: 8px;
-    padding-left: 80px;
-    background-repeat: no-repeat;
-    background-size: 30%;
+    /* padding-top: 8px; */
+    /* padding-left: 80px; */
+ 
     /* font-size: 21px; */
 }
 .winner {
     border: 1px solid green;
-    width: 20%;
-    height: 48px;
+    width: 40%;
+    height: 40px;
     background-color: lawngreen;
     color: rgb(83, 0, 21);
     font-weight: bold;
     /* text-align: center; */
     margin: 0 auto;
     /* padding-top: 8px; */
-    /* padding-left: 80px; */
     background-repeat: no-repeat;
-    background-size: 45%;
+    background-size: contain;
 }
-
+.match-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    
+}
 .match-item:hover {
     background-color: lightgray; 
 }
@@ -50,4 +59,30 @@
 p{
     margin: 0 auto;
     padding-left: 75px;
+}
+
+.rate {
+    width: 40%;
+    height: 40px;
+    /* border: 1px solid green; */
+    /* background-color: blue; */
+    padding-top: 5px;
+}
+
+.bet-country {
+    width: 100%;
+    border: 1px solid green;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 60px;
+    padding-top: 5px;   
+
+}
+.balance {
+    width: 20%;
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid green;
+    background-color: lightgreen;
+
 }
