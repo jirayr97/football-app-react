@@ -1,0 +1,115 @@
+.match-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 44%;
+    background-image: url("../assets/281851-P6WUWO-372-01.png");
+    background-size: 105% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.game-container {
+    padding-top: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.rate {
+    width: 55%;
+    text-align: center;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bet-country {
+    width: 50%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+.country-name {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.match-item  {
+    margin-top: 2px;
+    border-radius: 12px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 33%;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(176, 245, 149, 0.651);
+    border: 1px solid white;
+    padding: 5px 0;
+
+}
+
+.match-item:hover  {
+    background-color: rgba(1, 98, 167, 0.657); 
+    transition: 0.4s;
+    color: wheat;
+}
+
+.match-item:hover .rate {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+
+.winner {
+    padding-top: 20px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 12px;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    background-color: #005495;
+    color: whitesmoke;
+
+    
+}
+
+.win-flag {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media  (min-width: 820px) and (max-width: 1010px) {
+    p {
+        font-size: 10px;
+    }
+    .bet-country {
+        /* height: 30px; */
+    }
+    .rate {
+        padding-top: 3px;
+        font-size: 12px;
+    }
+    .country-name {
+        font-size: 15px;
+    }
+}
+
+
