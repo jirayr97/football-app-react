@@ -10,7 +10,7 @@ export const getRandomRates = (matchObject) => {
                 matchObject.firstCountryRate = (firstRandom * 100).toFixed(1);
             }
         } else {
-            matchObject.firstCountryRate = ((firstRandom * 10)/ 2).toFixed(1);
+            matchObject.firstCountryRate = ((firstRandom * 10) / 2).toFixed(1);
         }
         if (secondRandom <= 0.3) {
             if (secondRandom > 0.1) {
@@ -23,7 +23,7 @@ export const getRandomRates = (matchObject) => {
             matchObject.secondCountryRate = ((secondRandom * 10) / 2).toFixed(1);
         }
     }
-    
+
 };
 
 
@@ -37,12 +37,12 @@ export const updateTree = (treeData, winObj) => {
                 matchObj.firstCountry = winObj.winner;
                 matchObj.firstCountryCode = winObj.firstCountryCode;
 
-            } 
+            }
         })
     })
 }
 
-export const randomWinner = (currentGame,balance,betValue, selectedCountry) => {
+export const randomWinner = (currentGame, balance, betValue, selectedCountry) => {
     currentGame.winner = Math.random() > 0.5 ? currentGame.firstCountry : currentGame.secondCountry;
     if (currentGame.winner === selectedCountry && selectedCountry === currentGame.firstCountry) {
         balance += betValue * currentGame.firstCountryRate;
@@ -57,10 +57,10 @@ export const randomWinner = (currentGame,balance,betValue, selectedCountry) => {
 
 export const getWarnings = (selectedCountry, balance, betValue) => {
     if (!selectedCountry) {
-        return  "Country not selected";
+        return "Country not selected";
     } else if (!balance) {
         return "Your balance is empty";
     } else if (balance <= betValue || !betValue || betValue <= 0) {
-        return "Please input valid value ";  
-    } 
+        return "Please input valid value ";
+    }
 }

@@ -25,7 +25,7 @@ class GameBet extends React.Component {
             <div className="match-container">
                 <div className="game-container">
 
-                    <div className="match-item"  onClick={() => this.betItem(currentGame, currentGame.firstCountry)}>
+                    <div className="match-item" onClick={() => this.betItem(currentGame, currentGame.firstCountry)}>
                         <div className={`bet-country ${currentGame.firstCountry}`}></div>
                         <div className="country-name">{currentGame.firstCountry ? currentGame.firstCountry.toUpperCase() : ""}</div>
                         <div className={currentGame.firstCountryRate ? `rate` : ""}>{currentGame.firstCountryRate ? `Rate: ${currentGame.firstCountryRate}` : ""}</div>
