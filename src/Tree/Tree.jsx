@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tree.css";
-
+import PropTypes from "prop-types";
 
 class Tree extends React.Component {
     render() {
@@ -23,4 +23,8 @@ class Tree extends React.Component {
     }
 }
 
+Tree.propTypes = {
+    treeData: PropTypes.array.isRequired,
+    selectMatch: PropTypes.func.isRequired
+}
 export default Tree;

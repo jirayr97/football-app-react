@@ -4,7 +4,7 @@ import UserBET from "../UserBET";
 import GameBet from "../GameBET";
 import Players from "../Players";
 import { randomWinner, getWarnings } from "../helpers/helpers";
-
+import PropTypes from "prop-types";
 
 class Betting extends React.Component {
     constructor(props) {
@@ -76,5 +76,8 @@ class Betting extends React.Component {
         ) 
     }
 }
-
+Betting.propTypes = {
+    currentGame: PropTypes.object.isRequired,
+    setWinner: PropTypes.func.isRequired,
+}
 export default Betting;

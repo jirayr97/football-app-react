@@ -1,5 +1,7 @@
 import React from "react";
 import "./GameBET.css";
+import PropTypes from "prop-types";
+
 
 class GameBet extends React.Component {
 
@@ -48,4 +50,8 @@ class GameBet extends React.Component {
     }
 }
 
+GameBet.propTypes = {
+    currentGame: PropTypes.object.isRequired,
+    setCountry: PropTypes.func.isRequired
+}
 export default GameBet;

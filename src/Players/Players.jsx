@@ -1,5 +1,7 @@
 import React from "react";
 import "./Players.css";
+import PropTypes from "prop-types";
+
 
 const Players = ({selectedCountry, playersArray}) => {
     let players = selectedCountry ? (
@@ -13,4 +15,8 @@ const Players = ({selectedCountry, playersArray}) => {
     </div>
 };
 
+Players.propTypes = {
+    playersArray: PropTypes.array.isRequired,
+    selectedCountry: PropTypes.string.isRequired
+}
 export default Players;
