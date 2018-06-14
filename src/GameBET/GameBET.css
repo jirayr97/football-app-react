@@ -78,12 +78,11 @@
     text-align: center;
     border-radius: 12px;
     align-self: center;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 50%;
     font-weight: bold;
     background-color: #005495;
     color: whitesmoke;
-
     
 }
 
@@ -91,18 +90,12 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
-    height: 65px;
+    width: 57%;
+    height: 37%;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 @media  (min-width: 820px) and (max-width: 1010px) {
-    p {
-        font-size: 10px;
-    }
-    .bet-country {
-        /* height: 30px; */
-    }
     .rate {
         padding-top: 3px;
         font-size: 12px;
@@ -111,5 +104,75 @@
         font-size: 15px;
     }
 }
+@media  (min-width: 500px) and (max-width: 819px) { 
+    .country-name {
+        font-size: 11px;
+    }
+    .rate {
+        padding-bottom: 17px;
+        width: 80%;
+        height: 20px;
+        padding-top: 3px;
+        font-size: 10px;
+    }
+    .win-flag {
+        height: 33%;
+    }
+    .winner {
+        font-size: 12px;
+    }
+    .match-item {
+        height: 29%;
+    }
+    .bet-country {
+        height: 30px;
+    }
+
+}
+@media  (min-width: 360px) and (max-width: 500px) { 
+    .country-name {
+        font-size: 11px;
+    }
+    .rate {
+        padding-bottom: 17px;
+        width: 80%;
+        height: 20px;
+        padding-top: 3px;
+        font-size: 7px;
+    }
+    .win-flag {
+        height: 33%;
+    }
+    .winner {
+        font-size: 12px;
+    }
+    .match-item {
+        height: 29%;
+    }
+    .bet-country {
+        height: 25px;
+    }
+
+}
+
+@media  (max-width: 360px) { 
+    .country-name {
+        font-size: 9px;
+
+    }   
+    .rate {
+        padding-bottom: 17px;
+        width: 90%;
+        height: 20px;
+        padding-top: 3px;
+        font-size: 7px;
+    } 
+    .bet-country {
+        height: 14px;
+    }
+    .winner {
+        font-size: 10px;
+    }
 
 
+}

@@ -7,11 +7,9 @@ class GameBet extends React.Component {
         let select, code;
         if (!obj.winner) {
             if (obj.firstCountry === country) {
-                obj.isSelected = true;
                 select = obj.firstCountry;
                 code = obj.firstCountryCode;
             } else if (obj.secondCountry === country) {
-                obj.isSelected = false;
                 select = obj.secondCountry;
                 code = obj.secondCountryCode;
             }

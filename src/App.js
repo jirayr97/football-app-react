@@ -6,10 +6,8 @@ class App extends Component {
     render() {
       return (
         <div className="app">
-          <div className="header">Header</div>
+          <div className="header">FIFA 2018 WORLD CUP</div>
         	<Container />
-          <div className="footer">footer</div>
-
         </div>
       );
     }

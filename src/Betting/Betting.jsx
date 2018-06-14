@@ -3,6 +3,8 @@ import "./Betting.css";
 import UserBET from "../UserBET";
 import GameBet from "../GameBET";
 import Players from "../Players";
+import { randomWinner, getWarnings } from "../helpers/helpers";
+
 
 class Betting extends React.Component {
     constructor(props) {
@@ -36,27 +38,13 @@ class Betting extends React.Component {
         const { betValue, selectedCountry} = this.state;
         let { balance } = this.state;
         let { currentGame } =this.props;
-        if (selectedCountry && balance >= betValue && balance && betValue && betValue >= 1) {
-            currentGame.winner = Math.random() > 0.5 ? currentGame.firstCountry : currentGame.secondCountry;
-            if (currentGame.winner === selectedCountry && selectedCountry === currentGame.firstCountry) {
-                balance += betValue * currentGame.firstCountryRate;
-            } else if (currentGame.winner === selectedCountry && selectedCountry === currentGame.secondCountry) {
-                balance += betValue * currentGame.secondCountryRate;
-            } else if (currentGame.winner !== selectedCountry) {
-                balance -= betValue;
-            }
-            balance = Math.round(balance);
-            this.setState({ balance, selectedCountry: "", warnings: null, playersArray:[]})
+        if (selectedCountry && balance >= betValue && balance && betValue && betValue >= 1 && !currentGame.winner) {
+            balance = randomWinner(currentGame,balance,betValue, selectedCountry);
+            this.setState({ balance,  warnings: null, selectedCountry: ""})
             this.props.setWinner(currentGame)
         } else {
             let { warnings } = this.state;
-            if (!selectedCountry) {
-                warnings = "Country not Selected";
-            } else if (!balance) {
-                warnings = "Your balance is empty";
-            } else if (balance <= betValue || !betValue || betValue <= 0) {
-                warnings = "Please input valid value ";  
-            } 
+            warnings = getWarnings(selectedCountry,balance, betValue);
             this.setState({ warnings })
         }
         

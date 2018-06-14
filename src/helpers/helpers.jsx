@@ -42,3 +42,25 @@ export const updateTree = (treeData, winObj) => {
     })
 }
 
+export const randomWinner = (currentGame,balance,betValue, selectedCountry) => {
+    currentGame.winner = Math.random() > 0.5 ? currentGame.firstCountry : currentGame.secondCountry;
+    if (currentGame.winner === selectedCountry && selectedCountry === currentGame.firstCountry) {
+        balance += betValue * currentGame.firstCountryRate;
+    } else if (currentGame.winner === selectedCountry && selectedCountry === currentGame.secondCountry) {
+        balance += betValue * currentGame.secondCountryRate;
+    } else if (currentGame.winner !== selectedCountry) {
+        balance -= betValue;
+    }
+    balance = Math.round(balance);
+    return balance;
+}
+
+export const getWarnings = (selectedCountry, balance, betValue) => {
+    if (!selectedCountry) {
+        return  "Country not selected";
+    } else if (!balance) {
+        return "Your balance is empty";
+    } else if (balance <= betValue || !betValue || betValue <= 0) {
+        return "Please input valid value ";  
+    } 
+}

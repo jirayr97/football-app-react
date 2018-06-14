@@ -54,100 +54,100 @@
 }
 
 .Russia {
-    background-image: url("./flags/ru.png");
+    background-image: url("../assets/flags/ru.png");
 }
 .Arabia {
-    background-image: url("./flags/sa.png");
+    background-image: url("../assets/flags/sa.png");
 }
 .Egypt {
-    background-image: url("./flags/eg.png");  
+    background-image: url("../assets/flags/eg.png");  
 }
 .Uruguay {
-    background-image: url("./flags/uy.png")
+    background-image: url("../assets/flags/uy.png")
 }
 .Morocco {
-    background-image: url("./flags/ma.png");
+    background-image: url("../assets/flags/ma.png");
 }
 .Iran {
-    background-image: url("./flags/ir.png");
+    background-image: url("../assets/flags/ir.png");
 }
 .Portugal {
-    background-image: url("./flags/pt.png");
+    background-image: url("../assets/flags/pt.png");
 }
 .Spain {
-    background-image: url("./flags/es.png");
+    background-image: url("../assets/flags/es.png");
 }
 .France {
-    background-image: url("./flags/fr.png");
+    background-image: url("../assets/flags/fr.png");
 }
 .Australia {
-    background-image: url("./flags/au.png");
+    background-image: url("../assets/flags/au.png");
 }
 .Argentina {
-    background-image: url("./flags/ar.png")
+    background-image: url("../assets/flags/ar.png")
 }
 .Iceland {
-    background-image: url("./flags/is.png");
+    background-image: url("../assets/flags/is.png");
 }
 .Peru {
-    background-image: url("./flags/pe.png");
+    background-image: url("../assets/flags/pe.png");
 }
 .Denmark {
-    background-image: url("./flags/dk.png");
+    background-image: url("../assets/flags/dk.png");
 }
 .Croatia {
-    background-image: url("./flags/hr.png");
+    background-image: url("../assets/flags/hr.png");
 }
 .Nigeria {
-    background-image: url("./flags/ng.png");
+    background-image: url("../assets/flags/ng.png");
 }
 .Costa-Rica {
-    background-image: url("./flags/cr.png");
+    background-image: url("../assets/flags/cr.png");
 }
 .Serbia {
-    background-image: url("./flags/rs.png");
+    background-image: url("../assets/flags/rs.png");
 }
 .Germany {
-    background-image: url("./flags/de.png");
+    background-image: url("../assets/flags/de.png");
 }
 .Mexico {
-    background-image: url("./flags/mx.png");
+    background-image: url("../assets/flags/mx.png");
 }
 .Brazil {
-    background-image: url("./flags/br.png");
+    background-image: url("../assets/flags/br.png");
 }
 .Switzerland {
-    background-image: url("./flags/ch.png");
+    background-image: url("../assets/flags/ch.png");
 }
 .Sweden {
-    background-image: url("./flags/se.png");
+    background-image: url("../assets/flags/se.png");
 }
 .Korea {
-    background-image: url("./flags/kr.png");
+    background-image: url("../assets/flags/kr.png");
 }
 .Poland {
-    background-image: url("./flags/pl.png")
+    background-image: url("../assets/flags/pl.png")
 }
 .Senegal {
-    background-image: url("./flags/sn.png");
+    background-image: url("../assets/flags/sn.png");
 }
 .Colombia {
-    background-image: url("./flags/co.png");
+    background-image: url("../assets/flags/co.png");
 }
 .Japan {
-    background-image: url("./flags/jp.png");
+    background-image: url("../assets/flags/jp.png");
 }
 .Panama {
-    background-image: url("./flags/pa.png");
+    background-image: url("../assets/flags/pa.png");
 }
 .Belgium {
-    background-image: url("./flags/be.png");
+    background-image: url("../assets/flags/be.png");
 }
 .Tunisia {
-    background-image: url("./flags/tn.png");
+    background-image: url("../assets/flags/tn.png");
 }
 .England {
-    background-image: url("./flags/gb.png");
+    background-image: url("../assets/flags/gb.png");
 }
 
 @media all and (min-width: 1035px) and (max-width: 1200px) {

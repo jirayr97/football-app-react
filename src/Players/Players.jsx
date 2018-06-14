@@ -8,7 +8,7 @@ const Players = ({selectedCountry, playersArray}) => {
     </ol>) : null;
 
     return <div className="players-container">
-            <p className={`players-header ${selectedCountry}`}>{selectedCountry ? `${selectedCountry.toUpperCase()} players` : null }</p>
+            <p className={`players-header ${selectedCountry}`}>{selectedCountry ? selectedCountry.toUpperCase() : null }</p>
             {players}
     </div>
 };
