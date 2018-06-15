@@ -1,9 +1,9 @@
 .players-container {
     width: 28%;
     height: 100%;
-    background-color: #149f98ba;
+    background-color: #149f9871;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: rgb(255, 255, 255);
     padding: 10px;
 
