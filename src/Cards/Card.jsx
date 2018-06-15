@@ -13,8 +13,10 @@ const styles = {
 	card: {
 		maxWidth: 420,
 		margin: 10,
-		backgroundColor: "rgba(197, 254, 196, 0.93)",
+		backgroundColor: "#149f98ba",
+		
 	},
+
 
 	media: {
 		height: 0,
@@ -32,7 +34,7 @@ const Cards = ({ image, title, subheader, description, url }) => (
 			image={image}
 		/>
 		<CardContent>
-			<Typography component="p">
+			<Typography component="p" >
 				{description}
 			</Typography>
 		</CardContent>

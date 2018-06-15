@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: rgba(0, 255, 30, 0.507);
+    background-color: #149f98ba;
     padding: 10px;
 }
 .games-column {
@@ -47,7 +47,7 @@
     color: rgb(233, 224, 224);
     height: 30px;
     font-size: 13px;
-    background-color: #0000009f;
+    background-color: #10292e;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 4px;

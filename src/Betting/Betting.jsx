@@ -10,7 +10,7 @@ class Betting extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            balance: 2000,
+            balance: 5000,
             betValue: null,
             selectedCountry: "",
             warnings: null,

@@ -2,7 +2,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #076921;
+    background-color: #50203a;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 .loader {
     position: absolute;
     border: 16px solid #f3f3f3; 
-    border-top: 16px solid #73c810; 
+    border-top: 16px solid #149f98ba; 
     border-radius: 50%;
     width: 60px;
     height: 60px;

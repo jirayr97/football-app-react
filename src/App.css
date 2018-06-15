@@ -4,13 +4,15 @@
 }
 
 .app {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     padding-bottom: 20px;
     width: 100%;
     background-image: url("./assets/background.png");
+
+    background-color: black;
     background-attachment: fixed;
     background-size: cover ;
-
+    
 }
 
 
