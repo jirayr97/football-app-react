@@ -25,8 +25,8 @@
     height: 30px;
     border: 1px solid green;
     border-radius: 50px;
-    border: 2px solid black;
-    font-weight: bold;
+    border: 2px solid white;
+    /* font-weight: bold; */
     font-size: 15px;
 }
 
@@ -51,11 +51,11 @@
     align-items: center;
     width: 30%;
     height: 33%;
-    color: black;
-    font-weight: bold;
+    color: white;
+    /* font-weight: bold; */
     cursor: pointer;
-    background-color: #149f98;
-    border: 1px solid white;
+    background-color: rgba(156, 0, 83, 0.842);
+    /* border: 1px solid white; */
     padding: 5px 0;
 
 }
@@ -73,13 +73,13 @@
 
 
 .winner {
-    padding-top: 20px;
-    border: 1px solid white;
+    /* padding-top: 20px; */
+    /* border: 1px solid white; */
     text-align: center;
     border-radius: 12px;
     align-self: center;
     width: 30%;
-    height: 50%;
+    height: 40%;
     font-weight: bold;
     background-color: #005495;
     color: whitesmoke;

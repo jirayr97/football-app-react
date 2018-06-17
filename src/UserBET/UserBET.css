@@ -10,9 +10,10 @@
 }
 
 .user-bet-container button {
-
+    background: rgb(0, 255, 0);
     outline: none;
     font-weight: bold;
+    border-radius: 6px;
 }
 .user-bet-container input {
     background-color: rgb(255, 255, 255);
@@ -49,7 +50,7 @@
 .input {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
